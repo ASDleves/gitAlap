@@ -1,3 +1,95 @@
-.wrapper{
-    background-color: brown;
+body{
+    max-width: 700px;
+    width: 80%;
+    margin: auto;
+    background-color: #0f2bba;
+}
+main{
+    grid-template-areas: 'h h h'
+                         'n n n'
+                         'a a a'
+                         'as as as'
+                         'f f f';
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    background-color: #c4d9f2;
+    color: #034594;
+    text-align: justify;
+}
+header{
+display: grid;
+grid-area: h;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    display: grid;
+    grid-area: n;
+    border-bottom: 2px;
+    border-color: grey;
+    border-bottom-style: solid;
+    padding-left: 10px;
+    
+}
+
+nav img{
+    height: 192px;
+    width: 245px;
+    float: right;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+article{
+    display: grid;
+    grid-area: a;
+    border-bottom: 2px;
+    border-color: grey;
+    border-bottom-style: solid;
+    padding-right: 10px;
+}
+article img{
+    height: 192px;
+    width: 245px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+article h1{
+    text-align: right;
+}
+
+aside{
+    display: grid;
+    grid-area: as;
+    border-bottom: 2px;
+    border-color: grey;
+    border-bottom-style: solid;
+    padding-left: 10px;
+}
+aside img{
+    height: 192px;
+    width: 245px;
+    float: right;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+footer{
+    display: grid;
+    grid-area: f;
+    border-bottom: 2px;
+    border-color: grey;
+    border-bottom-style: solid;
+    padding-right: 10px;
+}
+footer h1{
+    text-align: right;
+}
+footer img{
+    height: 192px;
+    width: 245px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
